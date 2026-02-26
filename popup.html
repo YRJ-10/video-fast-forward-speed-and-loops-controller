@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Global Settings</h2>
+    <hr class="divider">
+    
+    <div class="row">
+      <span>Enable Extension</span>
+      <label class="switch">
+        <input type="checkbox" id="enabled">
+        <span class="slider"></span>
+      </label>
+    </div>
+
+    <div class="input-group">
+      <div class="field">
+        <label>Backward (s)</label>
+        <input type="number" id="backSec" min="1">
+      </div>
+      <div class="field">
+        <label>Forward (s)</label>
+        <input type="number" id="forSec" min="1">
+      </div>
+    </div>
+
+    <hr class="divider">
+    <div class="row">
+      <span>Show Speed UI</span>
+      <label class="switch">
+        <input type="checkbox" id="showSpeedUI">
+        <span class="slider"></span>
+      </label>
+    </div>
+    <div class="row">
+      <span>Show Loop UI</span>
+      <label class="switch">
+        <input type="checkbox" id="showLoopUI">
+        <span class="slider"></span>
+      </label>
+    </div>
+
+    <button id="save">Save Global Settings</button>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
